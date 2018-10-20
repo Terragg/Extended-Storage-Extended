@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest>
+    <identifier>ExtendedStorageExtended</identifier>
+    <version>0.3.0.1</version>
+    <dependencies>
+        <li>ExtendedStorage</li>
+    </dependencies>
+    <loadAfter>
+        <li>ExtendedStorage</li>
+    </loadAfter>
+<!--
+    <manifestUri>https://github.com/ese/Manifest.xml</manifestUri>
+    <downloadUri>https://github.com/ese/download</downloadUri>
+ -->
+</Manifest>
