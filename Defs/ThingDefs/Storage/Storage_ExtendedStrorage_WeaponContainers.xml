@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="ExtendedStorageExtended_FurnitureBase">
+		<defName>Storage_LargeWeaponsRack</defName>
+		<label>Large Weapons Rack</label>
+		<graphicData>
+			<texPath>Things/Building/Furniture/LargeWeaponsRack/LargeWeaponsRack</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,3)</drawSize>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<Beauty>-3</Beauty>
+			<ES_StorageFactor>9</ES_StorageFactor>
+		</statBases>
+		<description>Haulers carry larger weapons here for storage.  Shooty, stabby, and smashy - oh my!</description>
+		<size>(2,1)</size>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>45</costStuffCount>
+		<building>
+			<ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+			<defaultStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<thingDefs>
+						<li>MeleeWeapon_Mace</li>
+						<li>MeleeWeapon_Gladius</li>
+						<li>MeleeWeapon_LongSword</li>
+						<li>MeleeWeapon_Club</li>
+						<li>MeleeWeapon_Ikwa</li>
+						<li>MeleeWeapon_Spear</li>
+						<li>Gun_ChargeRifle</li>
+						<li>Gun_ChargeLance</li>
+						<li>Bow_Short</li>
+						<li>Pila</li>
+						<li>Bow_Recurve</li>
+						<li>Bow_Great</li>
+						<li>Gun_AssaultRifle</li>
+						<li>Gun_BoltActionRifle</li>
+						<li>Gun_ChainShotgun</li>
+						<li>Gun_PumpShotgun</li>
+						<li>Gun_SniperRifle</li>
+					</thingDefs>
+				</filter>
+			</defaultStorageSettings>
+			<fixedStorageSettings>
+				<filter>
+					<disallowedThingDefs>
+						<li>Gun_TripleRocket</li>
+						<li>Gun_DoomsdayRocket</li>
+						<li>Gun_Minigun</li>
+						<li>Gun_IncendiaryLauncher</li>
+						<li>Gun_LMG</li>
+						<li>OrbitalTargeterBombardment</li>
+						<li>OrbitalTargeterPowerBeam</li>
+						<li>TornadoGenerator</li>
+						<li>Gun_Autopistol</li>
+						<li>Gun_Revolver</li>
+						<li>Gun_MachinePistol</li>
+						<li>Gun_HeavySMG</li>
+					</disallowedThingDefs>
+					<disallowedCategories>
+						<li>Grenades</li>
+					</disallowedCategories>
+					<categories>
+						<li>WeaponsRanged</li>
+						<li>WeaponsMelee</li>
+					</categories>
+				</filter>
+			</fixedStorageSettings>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="ExtendedStorageExtended_FurnitureBase">
+		<defName>Storage_SmallWeaponsRack</defName>
+		<label>Small Weapons Rack</label>
+		<techLevel Inherit="False">Medieval</techLevel>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<graphicData>
+			<texPath>Things/Building/Furniture/SmallWeaponsRack/SmallWeaponsRack</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,3)</drawSize>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<Beauty>-1</Beauty>
+			<ES_StorageFactor>19</ES_StorageFactor>
+		</statBases>
+		<description>Haulers carry smaller weapons here for storage.  Do not reach in too fast, lest you stab yourself or call in the Ortillery on your position.</description>
+		<size>(2,1)</size>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>45</costStuffCount>
+		<building>
+			<ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+			<fixedStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<thingDefs>
+						<li>MeleeWeapon_Knife</li>
+						<li>OrbitalTargeterBombardment</li>
+						<li>OrbitalTargeterPowerBeam</li>
+						<li>TornadoGenerator</li>
+						<li>Gun_Autopistol</li>
+						<li>Gun_Revolver</li>
+						<li>Gun_MachinePistol</li>
+						<li>Gun_HeavySMG</li>
+					</thingDefs>
+				</filter>
+			</fixedStorageSettings>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="ExtendedStorageExtended_FurnitureBase">
+		<defName>Storage_MassiveWeaponsRack</defName>
+		<label>Massive Weapons Rack</label>
+		<techLevel Inherit="false">Industrial</techLevel>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+			<li>Smithing</li>
+		</researchPrerequisites>
+		<graphicData>
+			<texPath>Things/Building/Furniture/MassiveWeaponsRack/MassiveWeaponsRack</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,3)</drawSize>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>145</MaxHitPoints>
+			<Beauty>-3</Beauty>
+			<ES_StorageFactor>3</ES_StorageFactor>
+		</statBases>
+		<description>Haulers carry massive weapons here for storage.  Only the biggest booms go here!</description>
+		<size>(2,1)</size>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>55</costStuffCount>
+		<building>
+			<ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+			<preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+			<fixedStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<thingDefs>
+						<li>Gun_TripleRocket</li>
+						<li>Gun_DoomsdayRocket</li>
+						<li>Gun_Minigun</li>
+						<li>Gun_IncendiaryLauncher</li>
+						<li>Gun_LMG</li>
+					</thingDefs>
+				</filter>
+			</fixedStorageSettings>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="ExtendedStorageExtended_FurnitureBase">
+		<defName>Storage_ExplosivesContainer</defName>
+		<label>Explosives Container</label>
+		<terrainAffordanceNeeded Inherit="false">Medium</terrainAffordanceNeeded>
+		<techLevel Inherit="False">Industrial</techLevel>
+		<researchPrerequisites>
+			<li>Smithing</li>
+			<li>ComplexFurniture</li>
+			<li>Stonecutting</li>
+		</researchPrerequisites>
+		<staticSunShadowHeight Inherit="False">0.75</staticSunShadowHeight>
+		<graphicData>
+			<texPath>Things/Building/Furniture/ExplosivesContainer/ExplosivesContainer</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+      		<shaderType>CutoutComplex</shaderType>
+      		<drawSize>(4,3)</drawSize>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+      		<Mass>50</Mass>
+			<Beauty>-2</Beauty>
+			<ES_StorageFactor>9</ES_StorageFactor>
+		</statBases>
+		<description>Haulers carry explosives here for storage.  It really should have a NO SMOKING sign or something.</description>
+		<size>(2,1)</size>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>75</costStuffCount>
+		<building>
+			<ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+			<preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+			<preventDeteriorationInside>true</preventDeteriorationInside>
+			<fixedStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<categories>
+						<li>MortarShells</li>
+						<li>Grenades</li>
+					</categories>
+				</filter>
+			</fixedStorageSettings>
+		</building>
+	</ThingDef>
+</Defs>

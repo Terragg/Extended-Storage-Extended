@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef>
+		<defName>Storage_MassiveWeaponsRack</defName>
+		<ExtendedStorageExtended>
+			<holdsSummary>heavy weapons</holdsSummary>
+		</ExtendedStorageExtended>
+	</ThingDef>
+	<ThingDef>
+		<defName>Storage_LargeWeaponsRack</defName>
+		<ExtendedStorageExtended>
+			<holdsSummary>rifles and most melee weapons</holdsSummary>
+			<blurb>This allows non-vanilla weapons to be stored, so long as they are categorized as WeaponsRanged or WeaponsMelee.  This uses a complex intersection to achieve this w/o trying to patch against 9000+ mods and still allow vanilla weapons to be stored by default.  Any non-vanilla wepons are not allowed by default in the filter and must be manually enabled in the Storage filter settings.</blurb>
+		</ExtendedStorageExtended>
+	</ThingDef>
+	<ThingDef>
+		<defName>Storage_SmallWeaponsRack</defName>
+		<ExtendedStorageExtended>
+			<holdsSummary>pistols and small melee weapons</holdsSummary>
+		</ExtendedStorageExtended>
+	</ThingDef>
+	<ThingDef>
+		<defName>Storage_ExplosivesContainer</defName>
+		<ExtendedStorageExtended>
+			<holdsSummary>explosives</holdsSummary>
+		</ExtendedStorageExtended>
+	</ThingDef>
+	<ThingDef>
+		<defName>Storage_MeatHooks</defName>
+		<ExtendedStorageExtended>
+			<isExperimental>true</isExperimental>
+			<holdsSummary>corpses of any size</holdsSummary>
+			<blurb>Cover and refrigeration must be provided by the immediate envirionment.</blurb>
+		</ExtendedStorageExtended>
+	</ThingDef>
+	<ThingDef>
+		<defName>Storage_AnimalFeedTrough</defName>
+		<ExtendedStorageExtended>
+			<blurb>Cover and refrigeration must be provided by the immediate envirionment.</blurb>
+		</ExtendedStorageExtended>
+	</ThingDef>
+</Defs>

@@ -1,58 +1,49 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ModMetaData>
-	<name>Extended Storage Extended</name>
-	<targetVersion>1.0.2059</targetVersion>
-	<author>TerraggosaurusRex</author>
-	<url>https://steamcommunity.com/id/TerraggosaurusRex/myworkshopfiles/?appid=294100</url>
-	<description><![CDATA[ <size=32>Extended Storage - now Extended!</size>
-
-<size=24>About</size>
-================================================================
+# Extended Storage - now Extended! #
+## About ##
+------
 
 Expands the options for storing stuff by providing Extended Storage-derived buildings in a new 'Storage' menu.
 
-<size=24>Contents</size>
-================================================================
+## Contents ##
+------
 
 There is a limit to Steam description readibility and size.  The breakdown or what building does what is availible online at:
 
    https://github.com/Terragg/Extended-Storage-Extended/blob/master/Docs/Contents.md
 
-<size=24>Dependancies</size>
-================================================================
+## Dependancies ##
+------
 
 Requires a working copy of Extended Storage:
 
    https://steamcommunity.com/sharedfiles/filedetails/?id=731732064
 
-<size=24>KNOWN ISSUES</size>
-================================================================
+## KNOWN ISSUES ##
+------
 
-<size=18>Meat Hooks visual glitch</size>
---------------------------------
+### Meat Hooks visual glitch ###
+------
 
 The game will throw a "missing image" icon (the bright magenta X in a cell) once the corpses are moved onto the output stack (the part of the building that holds the biggest 'stack' of corpses). I know why it's doing this, but I can't address it yet.  I have not found any gameplay issues associated with it.  Once the last corpse is removed, the missing image icon disappears.  If this is unacceptable - don't build Meat Hooks.
 
-<size=18>Only Top weapon is right-click selectable</size>
---------------------------------
+### Only Top weapon is right-click selectable ###
+------
 
 Unlike Extended Storage Clothes racks, there is no supporting code to 'Equip' any weapon other than the one on the 'top' of the stack in the container building.  The C# coding needed to implement is a bit beyond me at the moment, but I am making progress.
 
-<size=24>Thanks to</size>
-================================================================
+## Thanks to ##
+------
 
 scullywag, DrVanGogh, and others:  Making and maintaining Extended Storage
 typesgal:  Stamper Font
 Marnador:  Rimword Font
 
-<size=24>Version</size>
-================================================================
+## Version ##
+------
 
 This is version 0.4.0.3 and is for RimWorld 1.0.2059.
 
-<size=24>Non-Steam Release URL</size>
-================================================================
+## Non-Steam Release URL ##
+------
 
    https://github.com/Terragg/Extended-Storage-Extended/releases/latest on Github.
- ]]></description>
-</ModMetaData>

@@ -1,0 +1,64 @@
+<Patch>
+	<!-- designation category -->
+	<!-- Manually update vanilla objects -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>Defs/ThingDef[defName="Shelf"]/designationCategory</xpath>
+				<success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Shelf"]</xpath>
+				<value>
+					<designationCategory />
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Shelf"]/designationCategory</xpath>
+		<value>
+			<designationCategory>ExtendedStorageExtended_FurnitureStorage</designationCategory>
+		</value>
+	</Operation>
+	<!-- Attempt to patch Extended Storage objects -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<!-- Skip ExtendedStorageExtended_FurnitureBase objects -->
+				<xpath>Defs/ThingDef[@ParentName="ExtendedStorageExtended_FurnitureBase"]</xpath>
+				<success>Invert</success>
+			</li>
+			<li Class="PatchOperationTest">
+				<!-- Skip non ExtendedStorage objects -->
+				<xpath>Defs/ThingDef[thingClass="ExtendedStorage.Building_ExtendedStorage"]</xpath>
+			</li>
+			<li Class="PatchOperationTest">
+				<!-- Skip ExtendedStorage objects that have designation Categories -->
+				<xpath>Defs/ThingDef/designationCategory</xpath>
+				<success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef</xpath>
+				<value>
+					<designationCategory />
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<!-- Manual set some ExtenededStorage objects :| -->
+		<xpath>Defs/ThingDef[defName="Storage_TrayRack" or defName="Storage_Basket" or defName="Storage_HazMatContainer" or defName="Storage_Locker" or defName="Storage_MedicineCabinet"]</xpath>
+		<value>
+			<designationCategory />
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef/thingClass[text()="ExtendedStorage.Building_ExtendedStorage"]/../designationCategory</xpath>
+		<value>
+			<designationCategory>ExtendedStorageExtended_FurnitureStorage</designationCategory>
+		</value>
+	</Operation>
+</Patch>

@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Manifest>
     <identifier>ExtendedStorageExtended</identifier>
-    <version>0.3.0.1</version>
+    <version>0.4.0.3</version>
     <dependencies>
         <li>ExtendedStorage</li>
     </dependencies>
     <loadAfter>
         <li>ExtendedStorage</li>
     </loadAfter>
-<!--
-    <manifestUri>https://github.com/ese/Manifest.xml</manifestUri>
-    <downloadUri>https://github.com/ese/download</downloadUri>
- -->
+    <manifestUri>https://github.com/Terragg/Extended-Storage-Extended/blob/master/About/Manifest.xml</manifestUri>
+    <downloadUri>https://github.com/Terragg/Extended-Storage-Extended/releases/latest</downloadUri>
 </Manifest>

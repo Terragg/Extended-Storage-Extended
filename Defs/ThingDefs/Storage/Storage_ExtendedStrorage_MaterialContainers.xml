@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="ExtendedStorageExtended_FurnitureBase">
+		<defName>Storage_MeatHooks</defName>
+		<label>Meat Hooks</label>
+		<techLevel Inherit="False">Medieval</techLevel>
+<!--
+		<researchPrerequisites>
+			<li>Smithing</li>
+		</researchPrerequisites>
+ -->
+		<graphicData>
+			<texPath>Things/Building/Furniture/MeatHooks/MeatHooks</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+      		<shaderType>CutoutComplex</shaderType>
+			<drawSize>(4,3)</drawSize>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>75</MaxHitPoints>
+			<Beauty>-2</Beauty>
+			<ES_StorageFactor>4</ES_StorageFactor>
+		</statBases>
+		<description>Haulers carry corpses here for storage.  Getting the muffalos on there requires bending the laws of physics.</description>
+		<size>(2,1)</size>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>45</costStuffCount>
+		<building>
+			<fixedStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<categories>
+						<li>Corpses</li>
+					</categories>
+				</filter>
+			</fixedStorageSettings>
+		</building>
+	</ThingDef>
+<!--
+	<ThingDef ParentName="ExtendedStorageExtended_FurnitureBase">
+		<defName>Storage_MeatHooks_Neolithic</defName>
+		<label>Meat Hooks (Tribal)</label>
+		<graphicData>
+			<texPath>Things/Building/Furniture/MeatHooks_Neolithic/MeatHooks_Neolithic</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+      		<shaderType>CutoutComplex</shaderType>
+			<drawSize>(4,3)</drawSize>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Beauty>-3</Beauty>
+			<ES_StorageFactor>4</ES_StorageFactor>
+			<Cleanliness>-5</Cleanliness>
+		</statBases>
+		<description>Haulers carry corpses here for storage.  Getting the muffalos on there requires bending the laws of physics.</description>
+		<size>(2,1)</size>
+		<costList>
+			<WoodLog>20</WoodLog>
+		</costList>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>30</costStuffCount>
+		<building>
+			<fixedStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<categories>
+						<li>Corpses</li>
+					</categories>
+				</filter>
+			</fixedStorageSettings>
+		</building>
+	</ThingDef>
+ -->
+	<ThingDef ParentName="ExtendedStorageExtended_FurnitureBase">
+		<defName>Storage_AnimalFeedTrough</defName>
+		<label>Feed Trough</label>
+		<techLevel Inherit="False">Medieval</techLevel>
+		<staticSunShadowHeight Inherit="False">0.33</staticSunShadowHeight>
+ 		<graphicData>
+			<texPath>Things/Building/Furniture/AnimalFeedTrough/AnimalFeedTrough</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,3)</drawSize>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Beauty>-1</Beauty>
+			<ES_StorageFactor>12</ES_StorageFactor>
+		</statBases>
+		<description>Haulers carry Animal Feed here for storage.  Raw vegetarian food is allowed but disabled by default.</description>
+		<size>(2,1)</size>
+		<costList>
+			<Steel>5</Steel>
+		</costList>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>45</costStuffCount>
+		<building>
+			<ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+			<defaultStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<categories>
+						<li>AnimalFeed</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
+			<fixedStorageSettings>
+				<filter>
+					<categories>
+						<li>AnimalFeed</li>
+						<li>PlantFoodRaw</li>
+					</categories>
+				</filter>
+			</fixedStorageSettings>
+		</building>
+	</ThingDef>
+</Defs>

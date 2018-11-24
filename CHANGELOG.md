@@ -13,3 +13,10 @@
 
 * Changed ExplosivesContainer to default to 'Grenades' CategoryDef instead of listing unique ThingsDefs.
 * Updated for r1.0
+
+# Version 0.4.0.3
+
+* Changed LargeWeaponsRack to allow non-vanilla weapons to be stored.
+* Updated internals to be easier to mod.
+* Minor balance tweaks.
++ Added AnimalFeedTrough.

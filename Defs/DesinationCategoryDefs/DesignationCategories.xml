@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<DesignationCategoryDef>
-		<defName>FurnitureStorage</defName>
+		<defName>ExtendedStorageExtended_FurnitureStorage</defName>
 		<label>storage</label>
 		<description>Things for storing other items.</description>
 		<order>515</order>

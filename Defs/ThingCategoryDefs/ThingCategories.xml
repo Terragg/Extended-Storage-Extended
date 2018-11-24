@@ -1,10 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-<!--
+	<!-- Categorization for furniture -->
 	<ThingCategoryDef>
-		<defName>BuildingsFurnitureStorage</defName>
+		<defName>ExtendedStorageExtended_BuildingsFurnitureStorage</defName>
 		<label>storage</label>
 		<parent>BuildingsFurniture</parent>
 	</ThingCategoryDef>
- -->
+	<!-- Category for AnimalFeed (Copied from VGP Vegetable Garden) -->
+	<!-- Depending on Load order will stomp UI by VGP Vegetable Garden icon [my apologies] -->
+	<ThingCategoryDef>
+		<defName>AnimalFeed</defName>
+		<label>Animal Feed</label>
+		<parent>Foods</parent>
+	</ThingCategoryDef>
 </Defs>
