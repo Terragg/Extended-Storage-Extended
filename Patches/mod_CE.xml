@@ -51,11 +51,13 @@
             <xpath>/Defs/ThingDef[defName="Storage_WoodenPallet"]/building/fixedStorageSettings/filter/categories/Ammo</xpath>
         </li>
         <li Class="PatchOperationAdd">
-            <xpath>/Defs/ThingDef[defName="Storage_WoodenPallet"]/building/fixedStorageSettings/filter/disallowedCategories</xpath>
+            <xpath>/Defs/ThingDef[defName="Storage_WoodenPallet"]/building/fixedStorageSettings/filter</xpath>
             <value>
-                <li>AmmoGrenades</li>
-                <li>AmmoRockets</li>
-                <li>AmmoShells</li>
+                <disallowedCategories>
+                    <li>AmmoGrenades</li>
+                    <li>AmmoRockets</li>
+                    <li>AmmoShells</li>
+                </disallowedCategories>
             </value>
         </li>
     </operations>
