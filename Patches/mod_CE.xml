@@ -44,5 +44,21 @@
         </li>
     </operations>
 </Operation>
+<Operation Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+        <li Class="PatchOperationTest">
+            <xpath>/Defs/ThingDef[defName="Storage_WoodenPallet"]/building/fixedStorageSettings/filter/categories/Ammo</xpath>
+        </li>
+        <li Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="Storage_WoodenPallet"]/building/fixedStorageSettings/filter/disallowedCategories</xpath>
+            <value>
+                <li>AmmoGrenades</li>
+                <li>AmmoRockets</li>
+                <li>AmmoShells</li>
+            </value>
+        </li>
+    </operations>
+</Operation>
 
 </Patch>
