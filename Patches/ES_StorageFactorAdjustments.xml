@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationReplace">
+		<!-- Uranium is no longer considered 'dense' and doesn't get x10 storage multiplier -->
+		<xpath>Defs/ThingDef[defName="Storage_HazMatContainer"]/statBases/ES_StorageFactor</xpath>
+		<value>
+			<ES_StorageFactor>13</ES_StorageFactor>
+		</value>
+	</Operation>
+</Patch>

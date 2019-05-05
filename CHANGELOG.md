@@ -20,3 +20,14 @@
 * Updated internals to be easier to mod.
 * Minor balance tweaks.
 + Added AnimalFeedTrough.
+
+# Version 0.5.0.1
+
++ Added Meat Hangers (Tribal).
++ Added Weapons Stack (Tribal).
+* Updated Meat Hooks with better Cleanliness.
+* Updated Large Weapons Rack to require Research and added protection to weapons and increase in stats to offset.
+* Patched HazMat Container from Exteneded Storage to increase capacity as Uranium no longer has the x10 multiplier.
+* Trival balance tweaks.
+* Updated for r1.0
+

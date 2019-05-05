@@ -1,8 +1,46 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<ThingDef ParentName="ExtendedStorageExtended_FurnitureBase">
+		<defName>Storage_WeaponStack</defName>
+		<label>Weapons Stack (Tribal)</label>
+		<castEdgeShadows>false</castEdgeShadows>
+		<staticSunShadowHeight>0</staticSunShadowHeight>
+		<graphicData>
+			<texPath>Things/Building/Furniture/WeaponsStack_Neolithic/WeaponsStack_Neolithic</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,3)</drawSize>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>25</MaxHitPoints>
+			<Beauty>-5</Beauty>
+			<ES_StorageFactor>4</ES_StorageFactor>
+			<Mass>5</Mass>
+		</statBases>
+		<description>Haulers carry any weapon here for "storage".  Just a prepared area and some sticks, really.</description>
+		<size>(2,1)</size>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>10</costStuffCount>
+		<building>
+			<fixedStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<categories>
+						<li>WeaponsRanged</li>
+						<li>WeaponsMelee</li>
+					</categories>
+				</filter>
+			</fixedStorageSettings>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="ExtendedStorageExtended_FurnitureBase">
 		<defName>Storage_LargeWeaponsRack</defName>
 		<label>Large Weapons Rack</label>
+		<techLevel Inherit="False">Medieval</techLevel>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
 		<graphicData>
 			<texPath>Things/Building/Furniture/LargeWeaponsRack/LargeWeaponsRack</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -10,8 +48,9 @@
 		</graphicData>
 		<statBases>
 			<MaxHitPoints>120</MaxHitPoints>
-			<Beauty>-3</Beauty>
+			<Beauty>-2</Beauty>
 			<ES_StorageFactor>9</ES_StorageFactor>
+			<Mass>25</Mass>
 		</statBases>
 		<description>Haulers carry larger weapons here for storage.  Shooty, stabby, and smashy - oh my!</description>
 		<size>(2,1)</size>
@@ -22,6 +61,7 @@
 		<costStuffCount>45</costStuffCount>
 		<building>
 			<ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+			<preventDeteriorationInside>true</preventDeteriorationInside>
 			<defaultStorageSettings>
 				<priority>Important</priority>
 				<filter>
@@ -89,6 +129,7 @@
 			<MaxHitPoints>120</MaxHitPoints>
 			<Beauty>-1</Beauty>
 			<ES_StorageFactor>19</ES_StorageFactor>
+			<Mass>25</Mass>
 		</statBases>
 		<description>Haulers carry smaller weapons here for storage.  Do not reach in too fast, lest you stab yourself or call in the Ortillery on your position.</description>
 		<size>(2,1)</size>
@@ -143,6 +184,7 @@
 		<building>
 			<ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
 			<preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+			<preventDeteriorationInside>true</preventDeteriorationInside>
 			<fixedStorageSettings>
 				<priority>Important</priority>
 				<filter>
@@ -171,12 +213,12 @@
 		<graphicData>
 			<texPath>Things/Building/Furniture/ExplosivesContainer/ExplosivesContainer</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-      		<shaderType>CutoutComplex</shaderType>
-      		<drawSize>(4,3)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(4,3)</drawSize>
 		</graphicData>
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
-      		<Mass>50</Mass>
+			<Mass>75</Mass>
 			<Beauty>-2</Beauty>
 			<ES_StorageFactor>9</ES_StorageFactor>
 		</statBases>

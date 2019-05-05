@@ -23,7 +23,8 @@ Cover and refrigeration must be provided by the immediate envirionment.
 ### Benefits: ###
 
    * Hides Ugliness
-   * Protects from Deterioration
+   * Protects top item from deterioration
+   * Protects all contents from deterioration
 
 ### Holds: ###
 
@@ -37,9 +38,14 @@ Cover and refrigeration must be provided by the immediate envirionment.
 
 This allows non-vanilla weapons to be stored, so long as they are categorized as WeaponsRanged or WeaponsMelee.  This uses a complex intersection to achieve this w/o trying to patch against 9000+ mods and still allow vanilla weapons to be stored by default.  Any non-vanilla wepons are not allowed by default in the filter and must be manually enabled in the Storage filter settings.
 
+### Prerequisites: ###
+
+   * ComplexFurniture
+
 ### Benefits: ###
 
    * Hides Ugliness
+   * Protects all contents from deterioration
 
 ### Holds: ###
 
@@ -94,7 +100,8 @@ This allows non-vanilla weapons to be stored, so long as they are categorized as
 ### Benefits: ###
 
    * Hides Ugliness
-   * Protects from Deterioration
+   * Protects top item from deterioration
+   * Protects all contents from deterioration
 
 ### Holds: ###
 
@@ -111,6 +118,10 @@ This allows non-vanilla weapons to be stored, so long as they are categorized as
 
 Cover and refrigeration must be provided by the immediate envirionment.
 
+### Prerequisites: ###
+
+   * Smithing
+
 ### Experimental: ###
 
 Use at own risk
@@ -121,7 +132,26 @@ Use at own risk
 
 ### Holds: ###
 
-5 stacks of corpses of any size:
+6 stacks of corpses of any size:
+
+   * Everything under 'Corpses' category
+
+## Meat Hangers (Tribal) ##
+------
+
+Cover and refrigeration must be provided by the immediate envirionment.
+
+### Experimental: ###
+
+Use at own risk
+
+### Benefits: ###
+
+   * none
+
+### Holds: ###
+
+4 stacks of corpses of any size:
 
    * Everything under 'Corpses' category
 
@@ -147,3 +177,16 @@ Use at own risk
    * Revolver
    * Machine Pistol
    * Heavy SMG
+
+## Weapons Stack (Tribal) ##
+------
+### Benefits: ###
+
+   * none
+
+### Holds: ###
+
+5 stacks of all weapons:
+
+   * Everything under 'Ranged Weapons' category
+   * Everything under 'Melee Weapons' category

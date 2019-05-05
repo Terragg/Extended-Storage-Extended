@@ -12,5 +12,6 @@
 		<defName>AnimalFeed</defName>
 		<label>Animal Feed</label>
 		<parent>Foods</parent>
+          <iconPath>Ui/Icons/ThingCategories/AnimalFeed</iconPath>
 	</ThingCategoryDef>
 </Defs>

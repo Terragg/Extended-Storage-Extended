@@ -4,21 +4,20 @@
 		<defName>Storage_MeatHooks</defName>
 		<label>Meat Hooks</label>
 		<techLevel Inherit="False">Medieval</techLevel>
-<!--
 		<researchPrerequisites>
 			<li>Smithing</li>
 		</researchPrerequisites>
- -->
 		<graphicData>
 			<texPath>Things/Building/Furniture/MeatHooks/MeatHooks</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-      		<shaderType>CutoutComplex</shaderType>
+			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(4,3)</drawSize>
 		</graphicData>
 		<statBases>
 			<MaxHitPoints>75</MaxHitPoints>
 			<Beauty>-2</Beauty>
-			<ES_StorageFactor>4</ES_StorageFactor>
+			<ES_StorageFactor>5</ES_StorageFactor>
+			<Cleanliness>1</Cleanliness>
 		</statBases>
 		<description>Haulers carry corpses here for storage.  Getting the muffalos on there requires bending the laws of physics.</description>
 		<size>(2,1)</size>
@@ -28,53 +27,66 @@
 		<costStuffCount>45</costStuffCount>
 		<building>
 			<fixedStorageSettings>
-				<priority>Important</priority>
 				<filter>
 					<categories>
 						<li>Corpses</li>
 					</categories>
 				</filter>
 			</fixedStorageSettings>
+			<defaultStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<categories>
+						<li>CorpsesAnimal</li>
+						<li>CorpsesInsect</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
 		</building>
 	</ThingDef>
-<!--
 	<ThingDef ParentName="ExtendedStorageExtended_FurnitureBase">
 		<defName>Storage_MeatHooks_Neolithic</defName>
-		<label>Meat Hooks (Tribal)</label>
+		<label>Meat Hangers (Tribal)</label>
 		<graphicData>
 			<texPath>Things/Building/Furniture/MeatHooks_Neolithic/MeatHooks_Neolithic</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-      		<shaderType>CutoutComplex</shaderType>
 			<drawSize>(4,3)</drawSize>
 		</graphicData>
+		<castEdgeShadows>false</castEdgeShadows>
+		<staticSunShadowHeight>0</staticSunShadowHeight>
 		<statBases>
 			<MaxHitPoints>50</MaxHitPoints>
 			<Beauty>-3</Beauty>
-			<ES_StorageFactor>4</ES_StorageFactor>
-			<Cleanliness>-5</Cleanliness>
+			<ES_StorageFactor>3</ES_StorageFactor>
+			<Cleanliness>-2</Cleanliness>
+			<Mass>10</Mass>
 		</statBases>
-		<description>Haulers carry corpses here for storage.  Getting the muffalos on there requires bending the laws of physics.</description>
+		<description>Haulers carry corpses here for hanging.  Yeah, the muffalos will fit, no problem.</description>
 		<size>(2,1)</size>
-		<costList>
-			<WoodLog>20</WoodLog>
-		</costList>
 		<stuffCategories>
 			<li>Metallic</li>
 			<li>Woody</li>
 		</stuffCategories>
-		<costStuffCount>30</costStuffCount>
+		<costStuffCount>20</costStuffCount>
 		<building>
 			<fixedStorageSettings>
-				<priority>Important</priority>
 				<filter>
 					<categories>
 						<li>Corpses</li>
 					</categories>
 				</filter>
 			</fixedStorageSettings>
+			<defaultStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<categories>
+						<li>CorpsesAnimal</li>
+						<li>CorpsesInsect</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
 		</building>
 	</ThingDef>
- -->
 	<ThingDef ParentName="ExtendedStorageExtended_FurnitureBase">
 		<defName>Storage_AnimalFeedTrough</defName>
 		<label>Feed Trough</label>
@@ -101,14 +113,6 @@
 		<costStuffCount>45</costStuffCount>
 		<building>
 			<ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
-			<defaultStorageSettings>
-				<priority>Important</priority>
-				<filter>
-					<categories>
-						<li>AnimalFeed</li>
-					</categories>
-				</filter>
-			</defaultStorageSettings>
 			<fixedStorageSettings>
 				<filter>
 					<categories>
@@ -117,6 +121,100 @@
 					</categories>
 				</filter>
 			</fixedStorageSettings>
+			<defaultStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<categories>
+						<li>AnimalFeed</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
 		</building>
 	</ThingDef>
+<!--
+	<ThingDef ParentName="ExtendedStorageExtended_FurnitureBase">
+		<defName>Storage_IndustrialRack</defName>
+		<label>Industrial Rack</label>
+		<terrainAffordanceNeeded Inherit="false">Medium</terrainAffordanceNeeded>
+		<techLevel Inherit="False">Industrial</techLevel>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+			<li>Machining</li>
+		</researchPrerequisites>
+		<staticSunShadowHeight Inherit="False">0.75</staticSunShadowHeight>
+		<graphicData>
+			<texPath>Things/Building/Furniture/IndustrialRack/IndustrialRack</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,3)</drawSize>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>400</MaxHitPoints>
+			<Mass>35</Mass>
+			<Beauty>-3</Beauty>
+			<ES_StorageFactor>9</ES_StorageFactor>
+		</statBases>
+		<description>Haulers carry uninstalled items here for storage.  Only thing missing is a forklift.</description>
+		<size>(2,1)</size>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>75</costStuffCount>
+		<building>
+			<fixedStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<thingDefs>
+						<li>SculptureSmall</li>
+						<li>SculptureLarge</li>
+						<li>SculptureGrand</li>
+					</thingDefs>
+					<categories>
+						<li>BuildingsArt</li>
+						<li>BuildingsFurniture</li>
+						<li>BuildingsJoy</li>
+						<li>BuildingsPower</li>
+						<li>BuildingsProduction</li>
+						<li>BuildingsTemperature</li>
+					</categories>
+				</filter>
+			</fixedStorageSettings>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="ExtendedStorageExtended_FurnitureBase">
+		<defName>Storage_BedrollRack</defName>
+		<label>Bedroll Rack</label>
+		<staticSunShadowHeight>0</staticSunShadowHeight>
+		<castEdgeShadows>false</castEdgeShadows>
+		<graphicData>
+			<texPath>Things/Building/Furniture/BedrollRack/BedrollRack</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,3)</drawSize>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Mass>5</Mass>
+			<Beauty>-1</Beauty>
+			<ES_StorageFactor>13</ES_StorageFactor>
+		</statBases>
+		<description>Haulers carry bedrolls here to tie-up. When was the last time someone washed these?</description>
+		<size>(2,1)</size>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>25</costStuffCount>
+		<building>
+			<fixedStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<thingDefs>
+						<li>Bedroll</li>
+						<li>BedrollDouble</li>
+					</thingDefs>
+				</filter>
+			</fixedStorageSettings>
+		</building>
+	</ThingDef>
+ -->
 </Defs>
+
