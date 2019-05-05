@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 	<!-- designation category -->
 	<!-- Manually update vanilla objects -->
@@ -49,7 +50,7 @@
 		</operations>
 	</Operation>
 	<Operation Class="PatchOperationAdd">
-		<!-- Manual set some ExtenededStorage objects :| -->
+		<!-- Manual set some ExtendedStorage objects :| -->
 		<xpath>Defs/ThingDef[defName="Storage_TrayRack" or defName="Storage_Basket" or defName="Storage_HazMatContainer" or defName="Storage_Locker" or defName="Storage_MedicineCabinet"]</xpath>
 		<value>
 			<designationCategory />

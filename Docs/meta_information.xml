@@ -7,6 +7,12 @@
 		</ExtendedStorageExtended>
 	</ThingDef>
 	<ThingDef>
+		<defName>Storage_WeaponStack</defName>
+		<ExtendedStorageExtended>
+			<holdsSummary>all weapons</holdsSummary>
+		</ExtendedStorageExtended>
+	</ThingDef>
+	<ThingDef>
 		<defName>Storage_LargeWeaponsRack</defName>
 		<ExtendedStorageExtended>
 			<holdsSummary>rifles and most melee weapons</holdsSummary>
@@ -27,6 +33,14 @@
 	</ThingDef>
 	<ThingDef>
 		<defName>Storage_MeatHooks</defName>
+		<ExtendedStorageExtended>
+			<isExperimental>true</isExperimental>
+			<holdsSummary>corpses of any size</holdsSummary>
+			<blurb>Cover and refrigeration must be provided by the immediate envirionment.</blurb>
+		</ExtendedStorageExtended>
+	</ThingDef>
+	<ThingDef>
+		<defName>Storage_MeatHooks_Neolithic</defName>
 		<ExtendedStorageExtended>
 			<isExperimental>true</isExperimental>
 			<holdsSummary>corpses of any size</holdsSummary>

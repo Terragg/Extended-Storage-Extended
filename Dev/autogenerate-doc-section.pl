@@ -315,13 +315,19 @@ sub __ParseESEThing
 		itemListDefault => './building/defaultStorageSettings/filter/thingDefs/li',
 		Prerequisites => './researchPrerequisites/li',
 		Label => './label',
-		list => ['./building/ignoreStoredThingsBeauty','./building/preventDeteriorationOnTop'],
+		list =>
+			[
+				'./building/ignoreStoredThingsBeauty',
+				'./building/preventDeteriorationOnTop',
+				'./building/preventDeteriorationInside'
+			],
 		Name => './defName',
 	);
 
 	%translation = (
 		'./building/ignoreStoredThingsBeauty' => 'Hides Ugliness',
-		'./building/preventDeteriorationOnTop' => 'Protects from Deterioration',
+		'./building/preventDeteriorationOnTop' => 'Protects top item from deterioration',
+		'./building/preventDeteriorationInside' => 'Protects all contents from deterioration',
 	);
 
 	$defName = $node->findvalue($xpaths{Name});
@@ -377,6 +383,7 @@ sub __ParseESEThing
 		foreach my $xpath (@{$xpaths{$listKey}})
 		{
 			my $value = $node->findvalue($xpath);
+# warn Data::Dumper->Dump([[$xpath, $value]], [__LINE__.'::'.$dataThings->{$defName}->{Name}]);
 			if (lc ($value) eq 'true') { $value = 1; }
 			if (lc ($value) eq 'false') { $value = 0; }
 			if ($value) {push (@out, $translation{$xpath}); }

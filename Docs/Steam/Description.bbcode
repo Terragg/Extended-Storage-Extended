@@ -15,14 +15,28 @@ Requires a working copy of Extended Storage:
 
    [url=https://steamcommunity.com/sharedfiles/filedetails/?id=731732064]https://steamcommunity.com/sharedfiles/filedetails/?id=731732064[/url]
 
+[b]Supports[/b]
+================================================================
+[b]Combat Extended[/b]
+Ammo storage in Pallets and Explosives Containers base on type.
+Hat-tip: jinlan
+
 [b]KNOWN ISSUES[/b]
 ================================================================
 
-[b]Meat Hooks visual glitch[/b]
+[b]Overall: Must be loaded immediately after Extended Storage[/b]
+--------------------------------
+There is an issue with some other mods that define a FurnitureBase abstract.  To prevent loss of functionality, make sure Extended Storage Exteneded is loaded [b]immediately[/b] after Extended Storage.
+
+[b]Meat Hooks: Visual glitch[/b]
 --------------------------------
 The game will throw a "missing image" icon (the bright magenta X in a cell) once the corpses are moved onto the output stack (the part of the building that holds the biggest 'stack' of corpses). I know why it's doing this, but I can't address it yet.  I have not found any gameplay issues associated with it.  Once the last corpse is removed, the missing image icon disappears.  If this is unacceptable - don't build Meat Hooks.
 
-[b]Only Top weapon is right-click selectable[/b]
+[b]Meat Hooks: Disappearing corpses glitch[/b]
+--------------------------------
+A patch to fix a semi-related issue in Extended Storage now allows corspes to be built in a 'bugged' state when splurged.  This bugged state is detected by the game and those corpses are immediately deleted.  There is only one current workaround, do not adjust Meat Hook filters while there are corpses stored - allow pawns to remove all corpses before adjusting filters.
+
+[b]Weapons Racks: Only top weapon is right-click selectable[/b]
 --------------------------------
 Unlike Extended Storage Clothes racks, there is no supporting code to 'Equip' any weapon other than the one on the 'top' of the stack in the container building.  The C# coding needed to implement is a bit beyond me at the moment, but I am making progress.
 
@@ -34,7 +48,7 @@ Marnador:  Rimword Font
 
 [b]Version[/b]
 ================================================================
-This is version 0.4.0.3 and is for RimWorld 1.0.2059.
+This is version 0.5.0.1 and is for RimWorld 1.0.2150.
 
 [b]Non-Steam Release URL[/b]
 ================================================================

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 	<!-- Thing category -->
 	<!-- Manually update vanilla objects -->
@@ -26,7 +27,7 @@
 	</Operation>
 	<!-- Attempt to patch Extended Storage objects -->
 	<Operation Class="PatchOperationAdd">
-		<!-- Manual set some ExtenededStorage objects :| -->
+		<!-- Manual set some ExtendedStorage objects :| -->
 		<xpath>Defs/ThingDef[defName="Storage_Basket" or defName="Storage_FabricHamper" or defName="Storage_HazMatContainer" or defName="Storage_Locker" or defName="Storage_MedicineCabinet" or defName="Storage_Skip" or defName="Storage_TrayRack" or defName="Storage_WoodenPallet"]</xpath>
 		<value>
 			<thingCategories  Inherit="False"/>
