@@ -7,7 +7,7 @@ Expands the options for storing stuff by providing Extended Storage-derived buil
 ## Contents ##
 ------
 
-There is a limit to Steam description readibility and size.  The breakdown or what building does what is availible online at:
+There is a limit to Steam description readability and size.  The breakdown or what building does what is available online at:
 
    https://github.com/Terragg/Extended-Storage-Extended/blob/master/Docs/Contents.md
 
@@ -32,7 +32,7 @@ Hat-tip: jinlan
 ### Overall: Must be loaded immediately after Extended Storage ###
 ------
 
-There is an issue with some other mods that define a FurnitureBase abstract.  To prevent loss of functionality, make sure Extended Storage Exteneded is loaded <b>immediately</b> after Extended Storage.
+There is an issue with some other mods that define a FurnitureBase abstract.  To prevent loss of functionality, make sure Extended Storage Extended is loaded <b>immediately</b> after Extended Storage.
 
 ### Meat Hooks: Visual glitch ###
 ------
@@ -42,7 +42,7 @@ The game will throw a "missing image" icon (the bright magenta X in a cell) once
 ### Meat Hooks: Disappearing corpses glitch ###
 ------
 
-A patch to fix a semi-related issue in Extended Storage now allows corspes to be built in a 'bugged' state when splurged.  This bugged state is detected by the game and those corpses are immediately deleted.  There is only one current workaround, do not adjust Meat Hook filters while there are corpses stored - allow pawns to remove all corpses before adjusting filters.
+A patch to fix a semi-related issue in Extended Storage now allows corpses to be built in a 'bugged' state when splurged.  This bugged state is detected by the game and those corpses are immediately deleted.  There is only one current workaround, do not adjust Meat Hook filters while there are corpses stored - allow pawns to remove all corpses before adjusting filters.
 
 ### Weapons Racks: Only top weapon is right-click selectable ###
 ------
