@@ -21,23 +21,7 @@
 		<xpath>Defs/ThingDef[defName="Shelf"]/thingCategories</xpath>
 		<value>
 			<thingCategories  Inherit="False">
-				<li>ExtendedStorageExtended_BuildingsFurnitureStorage</li>
-			</thingCategories>
-		</value>
-	</Operation>
-	<!-- Attempt to patch Extended Storage objects -->
-	<Operation Class="PatchOperationAdd">
-		<!-- Manual set some ExtendedStorage objects :| -->
-		<xpath>Defs/ThingDef[defName="Storage_Basket" or defName="Storage_FabricHamper" or defName="Storage_HazMatContainer" or defName="Storage_Locker" or defName="Storage_MedicineCabinet" or defName="Storage_Skip" or defName="Storage_TrayRack" or defName="Storage_WoodenPallet"]</xpath>
-		<value>
-			<thingCategories  Inherit="False"/>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[thingClass = "ExtendedStorage.Building_ExtendedStorage"]/thingCategories</xpath>
-		<value>
-			<thingCategories Inherit="False">
-				<li>ExtendedStorageExtended_BuildingsFurnitureStorage</li>
+				<li>BuildingsFurnitureStorage</li>
 			</thingCategories>
 		</value>
 	</Operation>

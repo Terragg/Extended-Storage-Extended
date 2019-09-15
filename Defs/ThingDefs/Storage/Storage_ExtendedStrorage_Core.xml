@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<ThingDef Name="ExtendedStorageExtended_FurnitureBase" ParentName="FurnitureBase" Abstract="True">
+	<ThingDef Name="ExtendedStorageExtended_FurnitureBase" ParentName="ExtendedStorage_FurnitureBase" Abstract="True">
 		<thingClass>ExtendedStorage.Building_ExtendedStorage</thingClass>
 		<pathCost>60</pathCost>
 		<altitudeLayer>Building</altitudeLayer>
@@ -15,8 +15,8 @@
 		</inspectorTabs>
 		<techLevel>Neolithic</techLevel>
 		<thingCategories Inherit="False">
-			<li>ExtendedStorageExtended_BuildingsFurnitureStorage</li>
+			<li>BuildingsFurnitureStorage</li>
 		</thingCategories>
-		<designationCategory Inherit="False">ExtendedStorageExtended_FurnitureStorage</designationCategory>
+		<designationCategory Inherit="False">FurnitureStorage</designationCategory>
 	</ThingDef>
 </Defs>

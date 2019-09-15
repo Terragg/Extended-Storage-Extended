@@ -31,3 +31,8 @@
 * Trivial balance tweaks.
 * Updated for r1.0
 
+# Version 0.6.0.1b
+
+* Testing expected changes from Extended Storage
+* Minor documentation corrections.
+
