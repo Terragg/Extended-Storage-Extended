@@ -7,7 +7,7 @@
 		</ExtendedStorageExtended>
 	</ThingDef>
 	<ThingDef>
-		<defName>Storage_WeaponStack</defName>
+		<defName>Storage_WeaponsStack</defName>
 		<ExtendedStorageExtended>
 			<holdsSummary>all weapons</holdsSummary>
 		</ExtendedStorageExtended>

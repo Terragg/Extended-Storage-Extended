@@ -14,6 +14,7 @@
 			<drawSize>(4,3)</drawSize>
 		</graphicData>
 		<statBases>
+			<Mass>30</Mass>
 			<MaxHitPoints>75</MaxHitPoints>
 			<Beauty>-2</Beauty>
 			<ES_StorageFactor>5</ES_StorageFactor>
@@ -133,6 +134,55 @@
 	</ThingDef>
 <!--
 	<ThingDef ParentName="ExtendedStorageExtended_FurnitureBase">
+		<defName>Storage_AnimalFeedTrough_Industrial</defName>
+		<label>Feed Trough</label>
+		<techLevel Inherit="False">Industrial</techLevel>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+			<li>Machining</li>
+		</researchPrerequisites>
+		<staticSunShadowHeight Inherit="False">0.33</staticSunShadowHeight>
+ 		<graphicData>
+			<texPath>Things/Building/Furniture/AnimalFeedTrough_Industrial/AnimalFeedTrough_Industrial</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,3)</drawSize>
+		</graphicData>
+		<statBases>
+			<Mass>15</Mass>
+			<MaxHitPoints>125</MaxHitPoints>
+			<Beauty>-1</Beauty>
+			<ES_StorageFactor>16</ES_StorageFactor>
+		</statBases>
+		<description>Haulers carry Animal Feed here for storage.  Raw vegetarian food is allowed but disabled by default.</description>
+		<size>(2,1)</size>
+		<costList>
+			<Steel>5</Steel>
+		</costList>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>40</costStuffCount>
+		<building>
+			<ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+			<fixedStorageSettings>
+				<filter>
+					<categories>
+						<li>AnimalFeed</li>
+						<li>PlantFoodRaw</li>
+					</categories>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<categories>
+						<li>AnimalFeed</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="ExtendedStorageExtended_FurnitureBase">
 		<defName>Storage_IndustrialRack</defName>
 		<label>Industrial Rack</label>
 		<terrainAffordanceNeeded Inherit="false">Medium</terrainAffordanceNeeded>
@@ -183,6 +233,7 @@
 	<ThingDef ParentName="ExtendedStorageExtended_FurnitureBase">
 		<defName>Storage_BedrollRack</defName>
 		<label>Bedroll Rack</label>
+		<techLevel Inherit="False">Medieval</techLevel>
 		<staticSunShadowHeight>0</staticSunShadowHeight>
 		<castEdgeShadows>false</castEdgeShadows>
 		<graphicData>
@@ -203,6 +254,40 @@
 			<li>Woody</li>
 		</stuffCategories>
 		<costStuffCount>25</costStuffCount>
+		<building>
+			<fixedStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<thingDefs>
+						<li>Bedroll</li>
+						<li>BedrollDouble</li>
+					</thingDefs>
+				</filter>
+			</fixedStorageSettings>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="ExtendedStorageExtended_FurnitureBase">
+		<defName>Storage_BedrollRack_Neolithic</defName>
+		<label>Bedroll Rack (Tribal)</label>
+		<staticSunShadowHeight>0</staticSunShadowHeight>
+		<castEdgeShadows>false</castEdgeShadows>
+		<graphicData>
+			<texPath>Things/Building/Furniture/BedrollRack_Neolithic/BedrollRack_Neolithic</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,3)</drawSize>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>30</MaxHitPoints>
+			<Mass>3</Mass>
+			<Beauty>-1</Beauty>
+			<ES_StorageFactor>6</ES_StorageFactor>
+		</statBases>
+		<description>Haulers carry bedrolls here to store. Addtional smells included for free.</description>
+		<size>(2,1)</size>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>15</costStuffCount>
 		<building>
 			<fixedStorageSettings>
 				<priority>Important</priority>
