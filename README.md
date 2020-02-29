@@ -2,7 +2,7 @@
 ## About ##
 ------
 
-Expands the options for storing stuff by providing Extended Storage-derived buildings in a new 'Storage' menu.
+Expands the options for storing stuff by providing Extended Storage-derived buildings.
 
 ## Contents ##
 ------
@@ -14,15 +14,15 @@ There is a limit to Steam description readability and size.  The breakdown or wh
 ## Dependancies ##
 ------
 
-Requires a working copy of Extended Storage:
+Requires a working copy of the revived Extended Storage:
 
-   https://steamcommunity.com/sharedfiles/filedetails/?id=731732064
+   https://steamcommunity.com/sharedfiles/filedetails/?id=2006727854
 
 ## Supports ##
 ------
 ### Combat Extended ###
 
-Ammo storage in Pallets and Explosives Containers base on type.
+Ammo storage in Pallets and Explosives Containers, based on type of ammo.
 
 Hat-tip: jinlan
 
@@ -32,7 +32,7 @@ Hat-tip: jinlan
 ### Overall: Must be loaded immediately after Extended Storage ###
 ------
 
-There is an issue with some other mods that define a FurnitureBase abstract.  To prevent loss of functionality, make sure Extended Storage Extended is loaded <b>immediately</b> after Extended Storage.
+To prevent issues, make sure Extended Storage Extended is loaded <b>immediately</b> after Extended Storage.
 
 ### Meat Hooks: Visual glitch ###
 ------
@@ -52,16 +52,18 @@ Unlike Extended Storage Clothes racks, there is no supporting code to 'Equip' an
 ## Thanks to ##
 ------
 
-scullywag, DrVanGogh, and others:  Making and maintaining Extended Storage
+Tad, scullywag, DrVanGogh, and others:  Making and maintaining Extended Storage
 typesgal:  Stamper Font
 Marnador:  Rimword Font
 
 ## Version ##
 ------
 
-This is version 0.5.0.1 and is for RimWorld 1.0.2150.
+This is version 0.6.0.2 and is for RimWorld 1.1.
 
 ## Non-Steam Release URL ##
 ------
 
-   https://github.com/Terragg/Extended-Storage-Extended/releases/latest on Github.
+Lateset Release   https://github.com/Terragg/Extended-Storage-Extended/releases/latest on Github.
+
+All Releases   https://github.com/Terragg/Extended-Storage-Extended/releases/ on Github.

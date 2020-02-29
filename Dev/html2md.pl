@@ -21,8 +21,8 @@ foreach $line (@lines)
 	$line =~ s#^[ \t]+##g;
 	if ($line =~ m#<h([1-6])>#)
 	{
-		my $tag = ('#' x (int ($1) - 1));
-# 		my $tag = ('#' x (int ($1)));
+# 		my $tag = ('#' x (int ($1) - 1));
+		my $tag = ('#' x (int ($1)));
 		$line =~ s#<h[1-6]>#$tag #g;
 		$line =~ s#</h[1-6]># $tag#g;
 	}

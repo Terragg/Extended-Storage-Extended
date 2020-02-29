@@ -36,3 +36,8 @@
 * Testing expected changes from Extended Storage
 * Minor documentation corrections.
 
+# Version 0.6.0.2
+
+* Updated for r1.1
+* Minor documentation corrections.
+

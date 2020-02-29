@@ -1,192 +1,192 @@
-## Feed Trough ##
+### Feed Trough ###
 ------
 
 Cover and refrigeration must be provided by the immediate envirionment.
 
-### Benefits: ###
+#### Benefits: ####
 
    * Hides Ugliness
 
-### Holds: ###
+#### Holds: ####
 
    * Everything under 'Animal Feed' category
-   * Everything under 'Vegetarian' category
+   * Everything under 'PlantFoodRaw' category
 
-## Explosives Container ##
+### Explosives Container ###
 ------
-### Prerequisites: ###
+#### Prerequisites: ####
 
    * Smithing
    * ComplexFurniture
    * Stonecutting
 
-### Benefits: ###
+#### Benefits: ####
 
    * Hides Ugliness
    * Protects top item from deterioration
    * Protects all contents from deterioration
 
-### Holds: ###
+#### Holds: ####
 
 10 stacks of explosives:
 
-   * Everything under 'Mortar Shells' category
+   * Everything under 'MortarShells' category
    * Everything under 'Grenades' category
 
-## Large Weapons Rack ##
+### Large Weapons Rack ###
 ------
 
 This allows non-vanilla weapons to be stored, so long as they are categorized as WeaponsRanged or WeaponsMelee.  This uses a complex intersection to achieve this w/o trying to patch against 9000+ mods and still allow vanilla weapons to be stored by default.  Any non-vanilla wepons are not allowed by default in the filter and must be manually enabled in the Storage filter settings.
 
-### Prerequisites: ###
+#### Prerequisites: ####
 
    * ComplexFurniture
 
-### Benefits: ###
+#### Benefits: ####
 
    * Hides Ugliness
    * Protects all contents from deterioration
 
-### Holds: ###
+#### Holds: ####
 
 10 stacks of rifles and most melee weapons:
 
-   * Everything under 'Ranged Weapons' category
-   * Everything under 'Melee Weapons' category
+   * Everything under 'WeaponsRanged' category
+   * Everything under 'WeaponsMelee' category
 
-### Cannot Hold: ###
+#### Cannot Hold: ####
 
    * Anything under 'Grenades' category
-   * Triple Rocket Launcher
-   * Doomsday Rocket Launcher
-   * Minigun
-   * Incendiary Launcher
-   * LMG
-   * Orbital Bombardment Targeter
-   * Orbital Power Beam Targeter
-   * Tornado Generator
-   * Autopistol
-   * Revolver
-   * Machine Pistol
-   * Heavy SMG
+   * Gun_TripleRocket
+   * Gun_DoomsdayRocket
+   * Gun_Minigun
+   * Gun_IncendiaryLauncher
+   * Gun_LMG
+   * OrbitalTargeterBombardment
+   * OrbitalTargeterPowerBeam
+   * TornadoGenerator
+   * Gun_Autopistol
+   * Gun_Revolver
+   * Gun_MachinePistol
+   * Gun_HeavySMG
 
-### Defaults to Storing: ###
+#### Defaults to Storing: ####
 
-   * Mace
-   * Gladius
-   * Longsword
-   * Club
-   * Ikwa
-   * Spear
-   * Charge Rifle
-   * Charge Lance
-   * Short Bow
+   * MeleeWeapon_Mace
+   * MeleeWeapon_Gladius
+   * MeleeWeapon_LongSword
+   * MeleeWeapon_Club
+   * MeleeWeapon_Ikwa
+   * MeleeWeapon_Spear
+   * Gun_ChargeRifle
+   * Gun_ChargeLance
+   * Bow_Short
    * Pila
-   * Recurve Bow
-   * Greatbow
-   * Assault Rifle
-   * Bolt-Action Rifle
-   * Chain Shotgun
-   * Pump Shotgun
-   * Sniper Rifle
+   * Bow_Recurve
+   * Bow_Great
+   * Gun_AssaultRifle
+   * Gun_BoltActionRifle
+   * Gun_ChainShotgun
+   * Gun_PumpShotgun
+   * Gun_SniperRifle
 
-## Massive Weapons Rack ##
+### Massive Weapons Rack ###
 ------
-### Prerequisites: ###
+#### Prerequisites: ####
 
    * ComplexFurniture
    * Smithing
 
-### Benefits: ###
+#### Benefits: ####
 
    * Hides Ugliness
    * Protects top item from deterioration
    * Protects all contents from deterioration
 
-### Holds: ###
+#### Holds: ####
 
 4 stacks of heavy weapons:
 
-   * Triple Rocket Launcher
-   * Doomsday Rocket Launcher
-   * Minigun
-   * Incendiary Launcher
-   * LMG
+   * Gun_TripleRocket
+   * Gun_DoomsdayRocket
+   * Gun_Minigun
+   * Gun_IncendiaryLauncher
+   * Gun_LMG
 
-## Meat Hooks ##
+### Meat Hooks ###
 ------
 
 Cover and refrigeration must be provided by the immediate envirionment.
 
-### Prerequisites: ###
+#### Prerequisites: ####
 
    * Smithing
 
-### Experimental: ###
+#### Experimental: ####
 
 Use at own risk
 
-### Benefits: ###
+#### Benefits: ####
 
    * none
 
-### Holds: ###
+#### Holds: ####
 
 6 stacks of corpses of any size:
 
    * Everything under 'Corpses' category
 
-## Meat Hangers (Tribal) ##
+### Meat Hangers (Tribal) ###
 ------
 
 Cover and refrigeration must be provided by the immediate envirionment.
 
-### Experimental: ###
+#### Experimental: ####
 
 Use at own risk
 
-### Benefits: ###
+#### Benefits: ####
 
    * none
 
-### Holds: ###
+#### Holds: ####
 
 4 stacks of corpses of any size:
 
    * Everything under 'Corpses' category
 
-## Small Weapons Rack ##
+### Small Weapons Rack ###
 ------
-### Prerequisites: ###
+#### Prerequisites: ####
 
    * ComplexFurniture
 
-### Benefits: ###
+#### Benefits: ####
 
    * Hides Ugliness
 
-### Holds: ###
+#### Holds: ####
 
 20 stacks of pistols and small melee weapons:
 
-   * Knife
-   * Orbital Bombardment Targeter
-   * Orbital Power Beam Targeter
-   * Tornado Generator
-   * Autopistol
-   * Revolver
-   * Machine Pistol
-   * Heavy SMG
+   * MeleeWeapon_Knife
+   * OrbitalTargeterBombardment
+   * OrbitalTargeterPowerBeam
+   * TornadoGenerator
+   * Gun_Autopistol
+   * Gun_Revolver
+   * Gun_MachinePistol
+   * Gun_HeavySMG
 
-## Weapons Stack (Tribal) ##
+### Weapons Stack (Tribal) ###
 ------
-### Benefits: ###
+#### Benefits: ####
 
    * none
 
-### Holds: ###
+#### Holds: ####
 
 5 stacks of all weapons:
 
-   * Everything under 'Ranged Weapons' category
-   * Everything under 'Melee Weapons' category
+   * Everything under 'WeaponsRanged' category
+   * Everything under 'WeaponsMelee' category

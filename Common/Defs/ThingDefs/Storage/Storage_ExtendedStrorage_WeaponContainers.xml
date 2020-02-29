@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<ThingDef ParentName="ExtendedStorageExtended_FurnitureBase">
-		<defName>Storage_WeaponStack</defName>
+		<defName>Storage_WeaponsStack</defName>
 		<label>Weapons Stack (Tribal)</label>
 		<castEdgeShadows>false</castEdgeShadows>
 		<staticSunShadowHeight>0</staticSunShadowHeight>
