@@ -14,9 +14,9 @@ There is a limit to Steam description readability and size.  The breakdown or wh
 ## Dependancies ##
 ------
 
-Requires a working copy of the revived Extended Storage:
+Requires a working copy of the Extended Storage:
 
-   https://steamcommunity.com/sharedfiles/filedetails/?id=2006727854
+   https://steamcommunity.com/sharedfiles/filedetails/?id=731732064
 
 ## Supports ##
 ------
@@ -28,16 +28,6 @@ Hat-tip: jinlan
 
 ## KNOWN ISSUES ##
 ------
-
-### Overall: Must be loaded immediately after Extended Storage ###
-------
-
-To prevent issues, make sure Extended Storage Extended is loaded <b>immediately</b> after Extended Storage.
-
-### Meat Hooks: Visual glitch ###
-------
-
-The game will throw a "missing image" icon (the bright magenta X in a cell) once the corpses are moved onto the output stack (the part of the building that holds the biggest 'stack' of corpses). I know why it's doing this, but I can't address it yet.  I have not found any gameplay issues associated with it.  Once the last corpse is removed, the missing image icon disappears.  If this is unacceptable - don't build Meat Hooks.
 
 ### Meat Hooks: Disappearing corpses glitch ###
 ------
@@ -52,16 +42,16 @@ Unlike Extended Storage Clothes racks, there is no supporting code to 'Equip' an
 ## Thanks to ##
 ------
 
-Tad, scullywag, DrVanGogh, and others:  Making and maintaining Extended Storage
+scullywag, DrVanGogh, and others:  Making and maintaining Extended Storage
 typesgal:  Stamper Font
 Marnador:  Rimword Font
 
 ## Version ##
 ------
 
-This is version 0.6.0.2 and is for RimWorld 1.1.
+This is version 0.6.1.0 and is for RimWorld 1.1.
 
-## Non-Steam Release URL ##
+## Non-Steam Release URLs ##
 ------
 
 Lateset Release   https://github.com/Terragg/Extended-Storage-Extended/releases/latest on Github.
