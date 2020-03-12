@@ -54,6 +54,6 @@ This is version 0.6.1.0 and is for RimWorld 1.1.
 ## Non-Steam Release URLs ##
 ------
 
-Lateset Release   https://github.com/Terragg/Extended-Storage-Extended/releases/latest on Github.
+Latest Release   https://github.com/Terragg/Extended-Storage-Extended/releases/latest on Github.
 
 All Releases   https://github.com/Terragg/Extended-Storage-Extended/releases/ on Github.

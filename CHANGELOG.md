@@ -41,3 +41,8 @@
 * Updated for r1.1
 * Minor documentation corrections.
 
+# Version 0.6.1.0
+
+* Relinked dependency to Skullywag's Extended Storage.
+* Removed now redundant patches.
+
