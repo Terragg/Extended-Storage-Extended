@@ -15,4 +15,25 @@
 			<li>BuildingsFurnitureStorage</li>
 		</thingCategories>
 	</ThingDef>
+
+	<ThingDef Name="ExtendedStorageExtended_FurnitureWithQualityBase" ParentName="ExtendedStorageExtended_FurnitureBase" Abstract="True">
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef Name="ExtendedStorageExtended_ArtableFurnitureBase" ParentName="ExtendedStorageExtended_FurnitureWithQualityBase" Abstract="True">
+		<comps>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtFurniture</nameMaker>
+				<descriptionMaker>ArtDescription_Furniture</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+		</comps>
+		<inspectorTabs>
+			<li>ITab_Art</li>
+		</inspectorTabs>
+	</ThingDef>
 </Defs>
