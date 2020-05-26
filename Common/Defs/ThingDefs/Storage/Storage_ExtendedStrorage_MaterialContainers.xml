@@ -132,6 +132,136 @@
 			</defaultStorageSettings>
 		</building>
 	</ThingDef>
+	<ThingDef ParentName="ExtendedStorageExtended_FurnitureBase">
+		<defName>Storage_ProstheticsRack</defName>
+		<label>Prosthetics Rack</label>
+		<techLevel Inherit="False">Medieval</techLevel>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<graphicData>
+			<texPath>Things/Building/Furniture/LargeWeaponsRack/LargeWeaponsRack</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,3)</drawSize>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<Beauty>-2</Beauty>
+			<ES_StorageFactor>19</ES_StorageFactor>
+			<Mass>30</Mass>
+		</statBases>
+		<description>Haulers carry artificial body parts here for storage.  The vaguely human body shaped parts hang freely and are slightly disturbing.</description>
+		<size>(2,1)</size>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
+		<building>
+			<fixedStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<categories>
+						<li>BodyPartsSimple</li>
+						<li>BodyPartsProsthetic</li>
+						<li>BodyPartsBionic</li>
+						<li>BodyPartsUltra</li>
+						<li>BodyPartsArchotech</li>
+					</categories>
+				</filter>
+			</fixedStorageSettings>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="ExtendedStorageExtended_FurnitureBase">
+		<defName>Storage_ProstheticsCabinet</defName>
+		<label>Prosthetics Cabinet</label>
+		<techLevel Inherit="False">Industrial</techLevel>
+		<researchPrerequisites>
+			<li>Machining</li>
+		</researchPrerequisites>
+		<graphicData>
+			<texPath>Things/Building/Furniture/MassiveWeaponsRack/MassiveWeaponsRack</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,3)</drawSize>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>145</MaxHitPoints>
+			<Beauty>0</Beauty>
+			<ES_StorageFactor>14</ES_StorageFactor>
+			<Mass>35</Mass>
+			<Cleanliness>0.1</Cleanliness>
+		</statBases>
+		<description>Haulers carry artificial body parts here for storage.  Solid sides hides all the ugliness and protects the interior at the expense of capacity.</description>
+		<size>(2,1)</size>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>65</costStuffCount>
+		<costList>
+			<Silver>10</Silver>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<building>
+			<ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+			<preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+			<preventDeteriorationInside>true</preventDeteriorationInside>
+			<fixedStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<categories>
+						<li>BodyPartsSimple</li>
+						<li>BodyPartsProsthetic</li>
+						<li>BodyPartsBionic</li>
+						<li>BodyPartsUltra</li>
+						<li>BodyPartsArchotech</li>
+					</categories>
+				</filter>
+			</fixedStorageSettings>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="ExtendedStorageExtended_FurnitureBase">
+		<defName>Storage_OrganBank</defName>
+		<label>Organ Bank</label>
+		<techLevel Inherit="False">Industrial</techLevel>
+		<researchPrerequisites>
+			<li>HospitalBed</li>
+		</researchPrerequisites>
+		<graphicData>
+			<texPath>Things/Building/Furniture/MassiveWeaponsRack/MassiveWeaponsRack</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,3)</drawSize>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>130</MaxHitPoints>
+			<Beauty>0</Beauty>
+			<ES_StorageFactor>11</ES_StorageFactor>
+			<Mass>35</Mass>
+			<Cleanliness>0.3</Cleanliness>
+		</statBases>
+		<description>Haulers carry natural body parts here for storage.  No war crimes here, no siree!</description>
+		<size>(2,1)</size>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>75</costStuffCount>
+		<costList>
+			<Silver>20</Silver>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<building>
+			<ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+			<preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+			<preventDeteriorationInside>true</preventDeteriorationInside>
+			<fixedStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<categories>
+						<li>BodyPartsNatural</li>
+					</categories>
+				</filter>
+			</fixedStorageSettings>
+		</building>
+	</ThingDef>
 <!--
 	<ThingDef ParentName="ExtendedStorageExtended_FurnitureBase">
 		<defName>Storage_AnimalFeedTrough_Industrial</defName>
