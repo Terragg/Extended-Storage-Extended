@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="ExtendedStorageExtended_FurnitureBase">
+		<defName>Storage_MeatHooks_Neolithic</defName>
+		<label>Meat Hangers (Tribal)</label>
+		<graphicData>
+			<texPath>Things/Building/Furniture/MeatHooks_Neolithic/MeatHooks_Neolithic</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,3)</drawSize>
+		</graphicData>
+		<castEdgeShadows>false</castEdgeShadows>
+		<staticSunShadowHeight>0</staticSunShadowHeight>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Beauty>-3</Beauty>
+			<ES_StorageFactor>3</ES_StorageFactor>
+			<Cleanliness>-2</Cleanliness>
+			<Mass>10</Mass>
+			<WorkToBuild>50</WorkToBuild>
+		</statBases>
+		<description>Haulers carry corpses here for hanging.  Yeah, the muffalos will fit, no problem.</description>
+		<size>(2,1)</size>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>20</costStuffCount>
+		<building>
+			<fixedStorageSettings>
+				<filter>
+					<categories>
+						<li>Corpses</li>
+					</categories>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<categories>
+						<li>CorpsesAnimal</li>
+						<li>CorpsesInsect</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+	</ThingDef>
+<!--
+	<ThingDef ParentName="ExtendedStorageExtended_FurnitureBase">
+		<defName>Storage_SlabFlatStone</defName>
+		<label>Stone Slab</label>
+		<techLevel Inherit="False">Neolithic</techLevel>
+		<graphicData>
+			<texPath>Things/Item/Chunk/ChunkStone</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(2,1)</drawSize>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Beauty>0</Beauty>
+			<ES_StorageFactor>4</ES_StorageFactor>
+			<Mass>9</Mass>
+			<WorkToBuild>40</WorkToBuild>
+		</statBases>
+		<description>Haulers carry most things to rest on the stacked stone blocks.  Not much better than a floor, but it helps.</description>
+		<size>(2,1)</size>
+		<stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>6</costStuffCount>
+		<building>
+			<fixedStorageSettings>
+				<priority>Preferred</priority>
+				<filter>
+					<categories>
+						<li>Chunks</li>
+						<li>Foods</li>
+						<li>Items</li>
+						<li>Manufactured</li>
+						<li>ResourcesRaw</li>
+					</categories>
+					<disallowedCategories>
+						<li>BodyPartsNatural</li>
+						<li>MortarShells</li>
+					</disallowedCategories>
+				</filter>
+			</fixedStorageSettings>
+		</building>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<thingCategories Inherit="False" />
+		<minifiedDef Inherit="False" />
+	</ThingDef>
+	<ThingDef ParentName="ExtendedStorageExtended_FurnitureBase">
+		<defName>Storage_SlabWoodenLog</defName>
+		<label>Log Slab</label>
+		<techLevel Inherit="False">Neolithic</techLevel>
+		<graphicData>
+			<texPath>Things/Item/Resource/WoodLog</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(2,1)</drawSize>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Beauty>-1</Beauty>
+			<ES_StorageFactor>3</ES_StorageFactor>
+			<Mass>4</Mass>
+			<WorkToBuild>20</WorkToBuild>
+		</statBases>
+		<description>Haulers carry most things to rest on these split logs.  Not much better than a floor, but it helps.</description>
+		<size>(2,1)</size>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>10</costStuffCount>
+		<building>
+			<fixedStorageSettings>
+				<priority>Preferred</priority>
+				<filter>
+					<categories>
+						<li>Chunks</li>
+						<li>Foods</li>
+						<li>Items</li>
+						<li>Manufactured</li>
+						<li>ResourcesRaw</li>
+					</categories>
+					<disallowedCategories>
+						<li>BodyPartsNatural</li>
+						<li>MortarShells</li>
+					</disallowedCategories>
+				</filter>
+			</fixedStorageSettings>
+		</building>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<thingCategories Inherit="False" />
+		<minifiedDef Inherit="False" />
+	</ThingDef>
+ -->
+<!--
+	<ThingDef ParentName="ExtendedStorageExtended_FurnitureBase">
+		<defName>Storage_BedrollRack_Neolithic</defName>
+		<label>Bedroll Rack (Tribal)</label>
+		<staticSunShadowHeight>0</staticSunShadowHeight>
+		<castEdgeShadows>false</castEdgeShadows>
+		<graphicData>
+			<texPath>Things/Building/Furniture/BedrollRack_Neolithic/BedrollRack_Neolithic</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,3)</drawSize>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>30</MaxHitPoints>
+			<Mass>3</Mass>
+			<Beauty>-1</Beauty>
+			<ES_StorageFactor>6</ES_StorageFactor>
+			<WorkToBuild>60</WorkToBuild>
+		</statBases>
+		<description>Haulers carry bedrolls here to store. Addtional smells included for free.</description>
+		<size>(2,1)</size>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>15</costStuffCount>
+		<building>
+			<fixedStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<thingDefs>
+						<li>Bedroll</li>
+						<li>BedrollDouble</li>
+					</thingDefs>
+				</filter>
+			</fixedStorageSettings>
+		</building>
+	</ThingDef>
+ -->
+</Defs>
+

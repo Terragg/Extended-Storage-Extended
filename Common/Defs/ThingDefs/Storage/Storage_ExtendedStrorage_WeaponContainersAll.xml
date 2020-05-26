@@ -15,6 +15,7 @@
 			<Beauty>-5</Beauty>
 			<ES_StorageFactor>4</ES_StorageFactor>
 			<Mass>5</Mass>
+			<WorkToBuild>50</WorkToBuild>
 		</statBases>
 		<description>Haulers carry any weapon here for "storage".  Just a prepared area and some sticks, really.</description>
 		<size>(2,1)</size>
@@ -162,8 +163,8 @@
 		<label>Massive Weapons Rack</label>
 		<techLevel Inherit="false">Industrial</techLevel>
 		<researchPrerequisites>
-			<li>ComplexFurniture</li>
 			<li>Smithing</li>
+			<li>ComplexFurniture</li>
 		</researchPrerequisites>
 		<graphicData>
 			<texPath>Things/Building/Furniture/MassiveWeaponsRack/MassiveWeaponsRack</texPath>
@@ -174,6 +175,7 @@
 			<MaxHitPoints>145</MaxHitPoints>
 			<Beauty>-3</Beauty>
 			<ES_StorageFactor>3</ES_StorageFactor>
+			<WorkToBuild>700</WorkToBuild>
 		</statBases>
 		<description>Haulers carry massive weapons here for storage.  Only the biggest booms go here!</description>
 		<size>(2,1)</size>
@@ -221,6 +223,7 @@
 			<Mass>75</Mass>
 			<Beauty>-2</Beauty>
 			<ES_StorageFactor>9</ES_StorageFactor>
+			<WorkToBuild>1200</WorkToBuild>
 		</statBases>
 		<description>Haulers carry explosives here for storage.  It really should have a NO SMOKING sign or something.</description>
 		<size>(2,1)</size>

@@ -53,4 +53,84 @@
 			<blurb>Cover and refrigeration must be provided by the immediate envirionment.</blurb>
 		</ExtendedStorageExtended>
 	</ThingDef>
+	<ThingDef>
+		<defName>Storage_BodyPartOrganBank</defName>
+		<ExtendedStorageExtended>
+			<holdsSummary>just organs</holdsSummary>
+		</ExtendedStorageExtended>
+	</ThingDef>
+	<ThingDef>
+		<defName>Storage_BodyPartProstheticsCabinet</defName>
+		<ExtendedStorageExtended>
+			<holdsSummary>multiple types of prosethics</holdsSummary>
+		</ExtendedStorageExtended>
+	</ThingDef>
+	<ThingDef>
+		<defName>Storage_BodyPartProstheticsRack</defName>
+		<ExtendedStorageExtended>
+			<holdsSummary>multiple types of prosethics</holdsSummary>
+		</ExtendedStorageExtended>
+	</ThingDef>
+	<ThingDef>
+		<defName>Storage_ChestOrnate</defName>
+		<ExtendedStorageExtended>
+			<holdsSummary>most things</holdsSummary>
+		</ExtendedStorageExtended>
+	</ThingDef>
+	<ThingDef>
+		<defName>Storage_ChestPlain</defName>
+		<ExtendedStorageExtended>
+			<holdsSummary>most things</holdsSummary>
+		</ExtendedStorageExtended>
+	</ThingDef>
+	<ThingDef>
+		<defName>Storage_ChestTreasure</defName>
+		<ExtendedStorageExtended>
+			<holdsSummary>valuable things</holdsSummary>
+		</ExtendedStorageExtended>
+	</ThingDef>
+	<ThingDef>
+		<defName>Storage_CrateLong</defName>
+		<ExtendedStorageExtended>
+			<holdsSummary>most things</holdsSummary>
+		</ExtendedStorageExtended>
+	</ThingDef>
+	<ThingDef>
+		<defName>Storage_SlabFlatStone</defName>
+		<ExtendedStorageExtended>
+			<holdsSummary>most things</holdsSummary>
+		</ExtendedStorageExtended>
+	</ThingDef>
+	<ThingDef>
+		<defName>Storage_SlabWoodenLog</defName>
+		<ExtendedStorageExtended>
+			<holdsSummary>most things</holdsSummary>
+		</ExtendedStorageExtended>
+	</ThingDef>
+<!--
+	<ThingDef>
+		<defName>Storage_IndustrialRack</defName>
+		<ExtendedStorageExtended>
+			<holdsSummary>Minified Buildings</holdsSummary>
+		</ExtendedStorageExtended>
+	</ThingDef>
+	<ThingDef>
+		<defName>Storage_AnimalFeedTrough_Industrial</defName>
+		<ExtendedStorageExtended>
+			<blurb>Cover and refrigeration must be provided by the immediate envirionment.</blurb>
+		</ExtendedStorageExtended>
+	</ThingDef>
+	<ThingDef>
+		<defName>Storage_BedrollRack</defName>
+		<ExtendedStorageExtended>
+			<holdsSummary>Sleeping gear</holdsSummary>
+		</ExtendedStorageExtended>
+	</ThingDef>
+	<ThingDef>
+		<defName>Storage_BedrollRack_Neolithic</defName>
+		<ExtendedStorageExtended>
+			<holdsSummary>Sleeping gear</holdsSummary>
+		</ExtendedStorageExtended>
+	</ThingDef>
+ -->
 </Defs>

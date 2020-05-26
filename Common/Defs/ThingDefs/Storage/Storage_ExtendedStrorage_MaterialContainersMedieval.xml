@@ -6,6 +6,7 @@
 		<techLevel Inherit="False">Medieval</techLevel>
 		<researchPrerequisites>
 			<li>Smithing</li>
+			<li>ComplexFurniture</li>
 		</researchPrerequisites>
 		<graphicData>
 			<texPath>Things/Building/Furniture/MeatHooks/MeatHooks</texPath>
@@ -19,6 +20,7 @@
 			<Beauty>-2</Beauty>
 			<ES_StorageFactor>5</ES_StorageFactor>
 			<Cleanliness>1</Cleanliness>
+			<WorkToBuild>500</WorkToBuild>
 		</statBases>
 		<description>Haulers carry corpses here for storage.  Getting the muffalos on there requires bending the laws of physics.</description>
 		<size>(2,1)</size>
@@ -46,52 +48,12 @@
 		</building>
 	</ThingDef>
 	<ThingDef ParentName="ExtendedStorageExtended_FurnitureBase">
-		<defName>Storage_MeatHooks_Neolithic</defName>
-		<label>Meat Hangers (Tribal)</label>
-		<graphicData>
-			<texPath>Things/Building/Furniture/MeatHooks_Neolithic/MeatHooks_Neolithic</texPath>
-			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(4,3)</drawSize>
-		</graphicData>
-		<castEdgeShadows>false</castEdgeShadows>
-		<staticSunShadowHeight>0</staticSunShadowHeight>
-		<statBases>
-			<MaxHitPoints>50</MaxHitPoints>
-			<Beauty>-3</Beauty>
-			<ES_StorageFactor>3</ES_StorageFactor>
-			<Cleanliness>-2</Cleanliness>
-			<Mass>10</Mass>
-		</statBases>
-		<description>Haulers carry corpses here for hanging.  Yeah, the muffalos will fit, no problem.</description>
-		<size>(2,1)</size>
-		<stuffCategories>
-			<li>Metallic</li>
-			<li>Woody</li>
-		</stuffCategories>
-		<costStuffCount>20</costStuffCount>
-		<building>
-			<fixedStorageSettings>
-				<filter>
-					<categories>
-						<li>Corpses</li>
-					</categories>
-				</filter>
-			</fixedStorageSettings>
-			<defaultStorageSettings>
-				<priority>Important</priority>
-				<filter>
-					<categories>
-						<li>CorpsesAnimal</li>
-						<li>CorpsesInsect</li>
-					</categories>
-				</filter>
-			</defaultStorageSettings>
-		</building>
-	</ThingDef>
-	<ThingDef ParentName="ExtendedStorageExtended_FurnitureBase">
 		<defName>Storage_AnimalFeedTrough</defName>
 		<label>Feed Trough</label>
 		<techLevel Inherit="False">Medieval</techLevel>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
 		<staticSunShadowHeight Inherit="False">0.33</staticSunShadowHeight>
  		<graphicData>
 			<texPath>Things/Building/Furniture/AnimalFeedTrough/AnimalFeedTrough</texPath>
@@ -102,6 +64,7 @@
 			<MaxHitPoints>100</MaxHitPoints>
 			<Beauty>-1</Beauty>
 			<ES_StorageFactor>12</ES_StorageFactor>
+			<WorkToBuild>400</WorkToBuild>
 		</statBases>
 		<description>Haulers carry Animal Feed here for storage.  Raw vegetarian food is allowed but disabled by default.</description>
 		<size>(2,1)</size>
@@ -132,8 +95,9 @@
 			</defaultStorageSettings>
 		</building>
 	</ThingDef>
+<!--
 	<ThingDef ParentName="ExtendedStorageExtended_FurnitureBase">
-		<defName>Storage_ProstheticsRack</defName>
+		<defName>Storage_BodyPartProstheticsRack</defName>
 		<label>Prosthetics Rack</label>
 		<techLevel Inherit="False">Medieval</techLevel>
 		<researchPrerequisites>
@@ -157,209 +121,204 @@
 			<li>Woody</li>
 		</stuffCategories>
 		<costStuffCount>50</costStuffCount>
-		<building>
-			<fixedStorageSettings>
-				<priority>Important</priority>
-				<filter>
-					<categories>
-						<li>BodyPartsSimple</li>
-						<li>BodyPartsProsthetic</li>
-						<li>BodyPartsBionic</li>
-						<li>BodyPartsUltra</li>
-						<li>BodyPartsArchotech</li>
-					</categories>
-				</filter>
-			</fixedStorageSettings>
-		</building>
-	</ThingDef>
-	<ThingDef ParentName="ExtendedStorageExtended_FurnitureBase">
-		<defName>Storage_ProstheticsCabinet</defName>
-		<label>Prosthetics Cabinet</label>
-		<techLevel Inherit="False">Industrial</techLevel>
-		<researchPrerequisites>
-			<li>Machining</li>
-		</researchPrerequisites>
-		<graphicData>
-			<texPath>Things/Building/Furniture/MassiveWeaponsRack/MassiveWeaponsRack</texPath>
-			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(4,3)</drawSize>
-		</graphicData>
-		<statBases>
-			<MaxHitPoints>145</MaxHitPoints>
-			<Beauty>0</Beauty>
-			<ES_StorageFactor>14</ES_StorageFactor>
-			<Mass>35</Mass>
-			<Cleanliness>0.1</Cleanliness>
-		</statBases>
-		<description>Haulers carry artificial body parts here for storage.  Solid sides hides all the ugliness and protects the interior at the expense of capacity.</description>
-		<size>(2,1)</size>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
-		<costStuffCount>65</costStuffCount>
-		<costList>
-			<Silver>10</Silver>
-			<ComponentIndustrial>1</ComponentIndustrial>
-		</costList>
-		<building>
-			<ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
-			<preventDeteriorationOnTop>true</preventDeteriorationOnTop>
-			<preventDeteriorationInside>true</preventDeteriorationInside>
-			<fixedStorageSettings>
-				<priority>Important</priority>
-				<filter>
-					<categories>
-						<li>BodyPartsSimple</li>
-						<li>BodyPartsProsthetic</li>
-						<li>BodyPartsBionic</li>
-						<li>BodyPartsUltra</li>
-						<li>BodyPartsArchotech</li>
-					</categories>
-				</filter>
-			</fixedStorageSettings>
-		</building>
-	</ThingDef>
-	<ThingDef ParentName="ExtendedStorageExtended_FurnitureBase">
-		<defName>Storage_OrganBank</defName>
-		<label>Organ Bank</label>
-		<techLevel Inherit="False">Industrial</techLevel>
-		<researchPrerequisites>
-			<li>HospitalBed</li>
-		</researchPrerequisites>
-		<graphicData>
-			<texPath>Things/Building/Furniture/MassiveWeaponsRack/MassiveWeaponsRack</texPath>
-			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(4,3)</drawSize>
-		</graphicData>
-		<statBases>
-			<MaxHitPoints>130</MaxHitPoints>
-			<Beauty>0</Beauty>
-			<ES_StorageFactor>11</ES_StorageFactor>
-			<Mass>35</Mass>
-			<Cleanliness>0.3</Cleanliness>
-		</statBases>
-		<description>Haulers carry natural body parts here for storage.  No war crimes here, no siree!</description>
-		<size>(2,1)</size>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
-		<costStuffCount>75</costStuffCount>
-		<costList>
-			<Silver>20</Silver>
-			<ComponentIndustrial>2</ComponentIndustrial>
-		</costList>
-		<building>
-			<ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
-			<preventDeteriorationOnTop>true</preventDeteriorationOnTop>
-			<preventDeteriorationInside>true</preventDeteriorationInside>
-			<fixedStorageSettings>
-				<priority>Important</priority>
-				<filter>
-					<categories>
-						<li>BodyPartsNatural</li>
-					</categories>
-				</filter>
-			</fixedStorageSettings>
-		</building>
-	</ThingDef>
-<!--
-	<ThingDef ParentName="ExtendedStorageExtended_FurnitureBase">
-		<defName>Storage_AnimalFeedTrough_Industrial</defName>
-		<label>Feed Trough</label>
-		<techLevel Inherit="False">Industrial</techLevel>
-		<researchPrerequisites>
-			<li>ComplexFurniture</li>
-			<li>Machining</li>
-		</researchPrerequisites>
-		<staticSunShadowHeight Inherit="False">0.33</staticSunShadowHeight>
- 		<graphicData>
-			<texPath>Things/Building/Furniture/AnimalFeedTrough_Industrial/AnimalFeedTrough_Industrial</texPath>
-			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(4,3)</drawSize>
-		</graphicData>
-		<statBases>
-			<Mass>15</Mass>
-			<MaxHitPoints>125</MaxHitPoints>
-			<Beauty>-1</Beauty>
-			<ES_StorageFactor>16</ES_StorageFactor>
-		</statBases>
-		<description>Haulers carry Animal Feed here for storage.  Raw vegetarian food is allowed but disabled by default.</description>
-		<size>(2,1)</size>
 		<costList>
 			<Steel>5</Steel>
 		</costList>
+		<building>
+			<fixedStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<categories>
+						<li>BodyPartsSimple</li>
+						<li>BodyPartsProsthetic</li>
+						<li>BodyPartsBionic</li>
+						<li>BodyPartsUltra</li>
+						<li>BodyPartsArchotech</li>
+					</categories>
+				</filter>
+			</fixedStorageSettings>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="ExtendedStorageExtended_FurnitureWithQualityBase">
+		<defName>Storage_ChestPlain</defName>
+		<techLevel Inherit="False">Medieval</techLevel>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<label>Large Chest</label>
+		<graphicData>
+			<texPath>Things/Building/Furniture/CrateLong/CrateLong</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2.4,1.9)</drawSize>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>720</WorkToBuild>
+			<Beauty>2</Beauty>
+			<ES_StorageFactor>6</ES_StorageFactor>
+		</statBases>
+		<description>Haulers carry some things here for storage. Rather plain, but keeps thing protected.</description>
 		<stuffCategories>
 			<li>Metallic</li>
+			<li>Woody</li>
 		</stuffCategories>
-		<costStuffCount>40</costStuffCount>
+		<costStuffCount>80</costStuffCount>
+		<costList>
+			<Steel>5</Steel>
+		</costList>
 		<building>
 			<ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+			<preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+			<preventDeteriorationInside>true</preventDeteriorationInside>
 			<fixedStorageSettings>
 				<filter>
 					<categories>
-						<li>AnimalFeed</li>
-						<li>PlantFoodRaw</li>
+						<li>Foods</li>
+						<li>Items</li>
+						<li>Manufactured</li>
+						<li>ResourcesRaw</li>
 					</categories>
+					<disallowedCategories>
+						<li>BodyPartsNatural</li>
+						<li>MortarShells</li>
+					</disallowedCategories>
 				</filter>
 			</fixedStorageSettings>
 			<defaultStorageSettings>
 				<priority>Important</priority>
 				<filter>
+					<thingDefs>
+						<li>Gold</li>
+						<li>Silver</li>
+						<li>Jade</li>
+					</thingDefs>
 					<categories>
-						<li>AnimalFeed</li>
+						<li>Items</li>
+						<li>Manufactured</li>
 					</categories>
 				</filter>
 			</defaultStorageSettings>
 		</building>
 	</ThingDef>
-	<ThingDef ParentName="ExtendedStorageExtended_FurnitureBase">
-		<defName>Storage_IndustrialRack</defName>
-		<label>Industrial Rack</label>
-		<terrainAffordanceNeeded Inherit="false">Medium</terrainAffordanceNeeded>
-		<techLevel Inherit="False">Industrial</techLevel>
+	<ThingDef ParentName="ExtendedStorageExtended_FurnitureWithQualityBase">
+		<defName>Storage_ChestTreasure</defName>
+		<techLevel Inherit="False">Medieval</techLevel>
 		<researchPrerequisites>
 			<li>ComplexFurniture</li>
-			<li>Machining</li>
 		</researchPrerequisites>
-		<staticSunShadowHeight Inherit="False">0.75</staticSunShadowHeight>
+		<label>Treasure Chest</label>
 		<graphicData>
-			<texPath>Things/Building/Furniture/IndustrialRack/IndustrialRack</texPath>
+			<texPath>Things/Building/Furniture/CrateLong/CrateLong</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(4,3)</drawSize>
+			<drawSize>(2.4,1.9)</drawSize>
 		</graphicData>
 		<statBases>
-			<MaxHitPoints>400</MaxHitPoints>
-			<Mass>35</Mass>
-			<Beauty>-3</Beauty>
-			<ES_StorageFactor>9</ES_StorageFactor>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>720</WorkToBuild>
+			<Beauty>2</Beauty>
+			<ES_StorageFactor>6</ES_StorageFactor>
 		</statBases>
-		<description>Haulers carry uninstalled items here for storage.  Only thing missing is a forklift.</description>
-		<size>(2,1)</size>
+		<description>Haulers carry valuable things here for storage. Arrr!</description>
 		<stuffCategories>
 			<li>Metallic</li>
+			<li>Woody</li>
 		</stuffCategories>
-		<costStuffCount>75</costStuffCount>
+		<costStuffCount>80</costStuffCount>
+		<costList>
+			<Steel>5</Steel>
+		</costList>
 		<building>
+			<ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+			<preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+			<preventDeteriorationInside>true</preventDeteriorationInside>
 			<fixedStorageSettings>
+				<filter>
+					<categories>
+						<li>Manufactured</li>
+						<li>ResourcesRaw</li>
+					</categories>
+					<disallowedCategories>
+						<li>BodyPartsNatural</li>
+						<li>MortarShells</li>
+					</disallowedCategories>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings>
 				<priority>Important</priority>
 				<filter>
 					<thingDefs>
-						<li>SculptureSmall</li>
-						<li>SculptureLarge</li>
-						<li>SculptureGrand</li>
+						<li>Gold</li>
+						<li>Silver</li>
+						<li>Jade</li>
 					</thingDefs>
-					<categories>
-						<li>BuildingsArt</li>
-						<li>BuildingsFurniture</li>
-						<li>BuildingsJoy</li>
-						<li>BuildingsPower</li>
-						<li>BuildingsProduction</li>
-						<li>BuildingsTemperature</li>
-					</categories>
 				</filter>
-			</fixedStorageSettings>
+			</defaultStorageSettings>
 		</building>
 	</ThingDef>
+	<ThingDef ParentName="ExtendedStorageExtended_ArtableFurnitureBase">
+		<defName>Storage_ChestOrnate</defName>
+		<techLevel Inherit="False">Medieval</techLevel>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<label>Ornate Chest</label>
+		<graphicData>
+			<texPath>Things/Building/Furniture/CrateLong/CrateLong</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2.4,1.9)</drawSize>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>1000</WorkToBuild>
+			<Beauty>2</Beauty>
+			<ES_StorageFactor>6</ES_StorageFactor>
+		</statBases>
+		<description>Haulers carry some valuable things here for storage. Can be decorated if of high enough quality.</description>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>90</costStuffCount>
+		<costList>
+			<Steel>10</Steel>
+			<Gold>10</Gold>
+		</costList>
+		<building>
+			<ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+			<preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+			<preventDeteriorationInside>true</preventDeteriorationInside>
+			<fixedStorageSettings>
+				<filter>
+					<categories>
+						<li>Foods</li>
+						<li>Items</li>
+						<li>Manufactured</li>
+						<li>ResourcesRaw</li>
+					</categories>
+					<disallowedCategories>
+						<li>BodyPartsNatural</li>
+						<li>MortarShells</li>
+					</disallowedCategories>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<thingDefs>
+						<li>Gold</li>
+						<li>Silver</li>
+						<li>Jade</li>
+					</thingDefs>
+					<categories>
+						<li>Items</li>
+						<li>Manufactured</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+	</ThingDef>
+ -->
+<!--
 	<ThingDef ParentName="ExtendedStorageExtended_FurnitureBase">
 		<defName>Storage_BedrollRack</defName>
 		<label>Bedroll Rack</label>
@@ -376,6 +335,7 @@
 			<Mass>5</Mass>
 			<Beauty>-1</Beauty>
 			<ES_StorageFactor>13</ES_StorageFactor>
+			<WorkToBuild>120</WorkToBuild>
 		</statBases>
 		<description>Haulers carry bedrolls here to tie-up. When was the last time someone washed these?</description>
 		<size>(2,1)</size>
@@ -384,40 +344,6 @@
 			<li>Woody</li>
 		</stuffCategories>
 		<costStuffCount>25</costStuffCount>
-		<building>
-			<fixedStorageSettings>
-				<priority>Important</priority>
-				<filter>
-					<thingDefs>
-						<li>Bedroll</li>
-						<li>BedrollDouble</li>
-					</thingDefs>
-				</filter>
-			</fixedStorageSettings>
-		</building>
-	</ThingDef>
-	<ThingDef ParentName="ExtendedStorageExtended_FurnitureBase">
-		<defName>Storage_BedrollRack_Neolithic</defName>
-		<label>Bedroll Rack (Tribal)</label>
-		<staticSunShadowHeight>0</staticSunShadowHeight>
-		<castEdgeShadows>false</castEdgeShadows>
-		<graphicData>
-			<texPath>Things/Building/Furniture/BedrollRack_Neolithic/BedrollRack_Neolithic</texPath>
-			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(4,3)</drawSize>
-		</graphicData>
-		<statBases>
-			<MaxHitPoints>30</MaxHitPoints>
-			<Mass>3</Mass>
-			<Beauty>-1</Beauty>
-			<ES_StorageFactor>6</ES_StorageFactor>
-		</statBases>
-		<description>Haulers carry bedrolls here to store. Addtional smells included for free.</description>
-		<size>(2,1)</size>
-		<stuffCategories>
-			<li>Woody</li>
-		</stuffCategories>
-		<costStuffCount>15</costStuffCount>
 		<building>
 			<fixedStorageSettings>
 				<priority>Important</priority>
